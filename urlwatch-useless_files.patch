@@ -1,0 +1,12 @@
+--- urlwatch-1.6/setup.py~	2008-11-18 23:31:22.000000000 +0100
++++ urlwatch-1.6/setup.py	2008-12-23 16:25:31.000000000 +0100
+@@ -60,9 +60,6 @@
+         package_dir = {'': 'lib'},
+         packages = [s.pkgname],
+         data_files = [
+-            # Example files
+-            (os.path.join('share', package, 'examples'),
+-                glob.glob(os.path.join('examples', '*'))),
+             # Manual page
+             (os.path.join('share', 'man', 'man1'),
+                 ['urlwatch.1']),
