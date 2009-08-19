@@ -9,7 +9,7 @@ Source0:	http://thpinfo.com/2008/urlwatch/%{name}-%{version}.tar.gz
 # Source0-md5:	358f3b82a2c762c713b513bc0e5622b6
 Patch0:		%{name}-useless_files.patch
 URL:		http://thpinfo.com/2008/urlwatch/
-BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildArch:	noarch
@@ -54,4 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/urlwatch.1*
 %dir %{py_sitescriptdir}/urlwatch
 %{py_sitescriptdir}/urlwatch/*.py[co]
+%if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/*.egg-info
+%endif
