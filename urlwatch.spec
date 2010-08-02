@@ -1,12 +1,12 @@
 Summary:	Tool for monitoring webpages for updates
 Summary(pl.UTF-8):	Narzędzie do obserwacji stron www w poszukiwaniu aktualizacji
 Name:		urlwatch
-Version:	1.10
+Version:	1.11
 Release:	1
 License:	distributable
 Group:		Applications
 Source0:	http://thpinfo.com/2008/urlwatch/%{name}-%{version}.tar.gz
-# Source0-md5:	afb00eb128906ada42aa7024b1a59820
+# Source0-md5:	198321b61ef51d3ab2ba33e64fbd5cde
 Patch0:		%{name}-useless_files.patch
 URL:		http://thpinfo.com/2008/urlwatch/
 BuildRequires:	python-devel
@@ -22,11 +22,11 @@ URL that has changed and a unified diff of what has changed. It is
 typically run as a cronjob.
 
 %description -l pl.UTF-8
-urlwatch to skrypt, który ma na celu informowanie użytkownika
-(poprzez email) o wszelkich zmianach dokonanych na stronach www.
-Powiadomienie zawiera wyłącznie informacje o stronach, które
-uległy zmianie w postaci listy różnic (diff). Zazwyczaj uruchamiany
-jest jako zadanie crona.
+urlwatch to skrypt, który ma na celu informowanie użytkownika (poprzez
+email) o wszelkich zmianach dokonanych na stronach www. Powiadomienie
+zawiera wyłącznie informacje o stronach, które uległy zmianie w
+postaci listy różnic (diff). Zazwyczaj uruchamiany jest jako zadanie
+crona.
 
 %prep
 %setup -q
