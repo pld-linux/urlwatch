@@ -1,12 +1,12 @@
 Summary:	Tool for monitoring webpages for updates
 Summary(pl.UTF-8):	Narzędzie do obserwacji stron www w poszukiwaniu aktualizacji
 Name:		urlwatch
-Version:	1.11
+Version:	1.12
 Release:	1
 License:	distributable
 Group:		Applications
 Source0:	http://thpinfo.com/2008/urlwatch/%{name}-%{version}.tar.gz
-# Source0-md5:	198321b61ef51d3ab2ba33e64fbd5cde
+# Source0-md5:	08051e6ce28ddfebb7021fd0f6251859
 Patch0:		%{name}-useless_files.patch
 URL:		http://thpinfo.com/2008/urlwatch/
 BuildRequires:	python-devel
